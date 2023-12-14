@@ -39,16 +39,19 @@
 
                                 <table class="table ccard-table table-striped table-hover">
                                     <tr>
+                                    	<th>ID</th>
                                         <th>Tên Khoá Học</th>
                                         <th>Ngày Bắt Đầu Khoá Học</th>
                                         <th>Ngày Kết Thúc Khoá Học</th>
                                         <th>Số Lượng Tham Gia</th>
                                     </tr>
+                            <c:forEach var="items" items="${listKhoaHoc}">
                                     <tr>
-                                        <td>Chuẩn Đầu Ra Ngoại Ngữ</td>
-                                        <td>22/11/2023</td>
-                                        <td>22/05/2024</td>
-                                        <td>12</td>
+                                    	<td>${items.getidKhoaHoc()}</td>
+                                        <td>${iteam.getTenKhoaHoc()}</td>
+                                        <td>${iteam.getNgayBatDauKhoaHoc()}</td>
+                                        <td>${iteam.getNgayKetThucKhoaHoc()}</td>
+                                        <td>${iteam.getSoLuongThamGia()}</td>
                                         <td><span class="table-remove edit">
 												<button type="button"
 													class="btn btn-outline-primary btn-outline-rounded btn-sm my-0"
@@ -66,6 +69,7 @@
 													Remove</button>
 										</span></td>
                                     </tr>
+                             </c:forEach>
                                 </table>
 
                                 <script type="text/javascript">

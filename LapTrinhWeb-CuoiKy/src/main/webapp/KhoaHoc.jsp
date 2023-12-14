@@ -23,7 +23,10 @@
                             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Khóa Học</h3>
 
                             <form class="px-md-2">
-
+								<div class="form-outline mb-4">
+                                    <input type="text" id="form3Example1q" name="idKhoaHoc" class="form-control" />
+                                    <label class="form-label" for="form3Example1q">ID</label>
+                                </div>
                                 <div class="form-outline mb-4">
                                     <input type="text" id="form3Example1q" name="TenKhoaHoc" class="form-control" />
                                     <label class="form-label" for="form3Example1q">Tên Khóa Học</label>
@@ -60,7 +63,7 @@
 
 
 
-                                <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+                                <button type="submit" class="btn btn-success btn-lg mb-1" onclick="location.href='/LapTrinhWeb-CuoiKy/KhoaHocServlet'">Submit </button>
 
                             </form>
 
